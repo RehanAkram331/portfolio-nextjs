@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="static-hero-right">
         <div className="static-hero-img">
           <div className="static-hero-img-inner">
-            <img src="images/slider/1.jpg" alt="" />
+            <img src="images/slider/10.png" alt="" />
             <div className="icon-1 floating-item">
               {/* <img src="images/icon/photoshop.svg" alt="" /> */}
             </div>

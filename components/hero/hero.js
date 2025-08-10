@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import Laravel from "../Icon/Laravel";
 import ReactSvg from "../Icon/ReactSvg";
-
 const Hero = () => {
   return (
     <section className="static-hero" id="home">
@@ -54,7 +53,12 @@ const Hero = () => {
           <div className="static-hero-img-inner">
             <img src="images/slider/10.png" alt="" />
             <div className="icon-1 floating-item">
-              {/* <img src="images/icon/photoshop.svg" alt="" /> */}
+              <img
+                src="images/icon/asp.png"
+                width="100%"
+                height="100%"
+                alt=""
+              />
             </div>
             <div className="icon-2 floating-item">
               <Laravel />

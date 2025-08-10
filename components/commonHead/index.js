@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-
+import logo from "../../public/images/logo.jpeg";
 const CommonHead = ({ pageTitle = "", description = "" }) => {
   const defaultTitle =
     "Rehan Akram - Full-Stack Developer (Laravel, ASP.NET, React)";
@@ -8,7 +8,6 @@ const CommonHead = ({ pageTitle = "", description = "" }) => {
     "Portfolio of Rehan Akram, Full-Stack Web Developer specializing in Laravel, ASP.NET Core, and ReactJS. Explore my projects, skills, and work experience.";
   const defaultKeywords =
     "Rehan Akram, Full-Stack Developer, Laravel Developer, ASP.NET Developer, ReactJS Developer, Web Development, Portfolio, Bangladesh";
-  const defaultImage = "/images/portfolio-preview.jpg";
 
   return (
     <Head>
@@ -16,12 +15,6 @@ const CommonHead = ({ pageTitle = "", description = "" }) => {
         {pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle}
       </title>
       {/* Bootstrap CSS */}
-      <link
-        href="../../styles/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-        crossOrigin="anonymous"
-      ></link>
 
       {/* Google Fonts */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +30,7 @@ const CommonHead = ({ pageTitle = "", description = "" }) => {
       <meta name="author" content="Rehan Akram" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <html lang="en" />
-      <link rel="icon" href="/images/logo.jpeg" />
+      <link rel="icon" href={logo} />
 
       {/* Open Graph for Social Sharing */}
       <meta property="og:type" content="website" />
@@ -46,7 +39,7 @@ const CommonHead = ({ pageTitle = "", description = "" }) => {
         property="og:description"
         content={description || defaultDescription}
       />
-      <meta property="og:image" content="/images/portfolio-preview.jpg" />
+      <meta property="og:image" content={logo} />
       <meta property="og:url" content="https://your-portfolio-link.com" />
 
       {/* Twitter */}
@@ -59,7 +52,7 @@ const CommonHead = ({ pageTitle = "", description = "" }) => {
         name="twitter:description"
         content={description ? description : defaultDescription}
       />
-      <meta name="twitter:image" content={defaultImage} />
+      <meta name="twitter:image" content={logo} />
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
@@ -69,7 +62,7 @@ const CommonHead = ({ pageTitle = "", description = "" }) => {
             "@type": "Person",
             name: "Rehan Akram",
             url: "https://your-portfolio-link.com",
-            image: defaultImage,
+            image: logo,
             jobTitle: "Full-Stack Developer",
             worksFor: {
               "@type": "Organization",

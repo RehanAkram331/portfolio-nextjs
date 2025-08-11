@@ -13,44 +13,45 @@ const testimonial = [
   {
     id: "02",
     tImg: "images/testimonial/img-2.jpg",
-    tTitle: "Outstanding ASP.NET Core development skills.",
-    Des: "We hired Rehan to build a secure order management system in ASP.NET Core. The result exceeded expectations — fast, reliable, and easy to maintain. His clean coding and database optimization really stood out.",
+    tTitle: "Outstanding ASP.NET Core development for order management.",
+    Des: "We hired Rehan to build a secure, high-performance order management system in ASP.NET Core. The result exceeded expectations — fast, reliable, and easy to maintain. His clean coding and database optimization really stood out.",
     Title: "Sarah Thompson",
     Sub: "CTO, Borderless Group",
   },
   {
     id: "03",
     tImg: "images/testimonial/img-3.jpg",
-    tTitle: "ReactJS frontend with seamless API integration.",
-    Des: "Rehan built us a dynamic ReactJS dashboard connected to our backend APIs. The interface is smooth, responsive, and user-friendly. His ability to bridge backend and frontend made the project a success.",
+    tTitle: "ReactJS frontend with seamless Laravel API integration.",
+    Des: "Rehan built us a dynamic ReactJS dashboard connected to our Laravel backend APIs. The interface is smooth, responsive, and user-friendly. His ability to bridge backend and frontend made the project a success.",
     Title: "Imran Khan",
     Sub: "Product Manager, GoodDeal.com.bd",
   },
   {
     id: "04",
     tImg: "images/testimonial/img-4.jpg",
-    tTitle: "Always delivers on time with high-quality code.",
-    Des: "Rehan’s professionalism and problem-solving skills are unmatched. He communicates clearly, delivers on time, and ensures everything is tested and ready for production.",
+    tTitle: "Always delivers on time with production-ready code.",
+    Des: "Rehan’s professionalism and problem-solving skills are unmatched. He communicates clearly, delivers on time, and ensures everything is tested and ready for production deployment.",
     Title: "Emily Watson",
-    Sub: "Project Coordinator",
+    Sub: "Project Coordinator, TechForward",
   },
   {
     id: "05",
     tImg: "images/testimonial/img-5.jpg",
-    tTitle: "Security and performance optimization expert.",
-    Des: "Rehan optimized our e-commerce site’s database and implemented role-based access control. Our load time is faster, and our security is top-notch now.",
+    tTitle: "Security and performance optimization expert for e-commerce.",
+    Des: "Rehan optimized our e-commerce platform’s database and implemented role-based access control. Our load time is faster, and our security is now top-notch.",
     Title: "Tanvir Ahmed",
     Sub: "Founder, EcomTech",
   },
   {
     id: "06",
     tImg: "images/testimonial/img-6.jpg",
-    tTitle: "Full-stack developer you can trust.",
-    Des: "From Laravel APIs to React frontends, Rehan can handle the full stack with ease. His work ethic and technical expertise make him a go-to developer for complex projects.",
+    tTitle: "Full-stack Laravel, ASP.NET, and ReactJS developer you can trust.",
+    Des: "From Laravel APIs to React frontends and ASP.NET integrations, Rehan can handle the full stack with ease. His work ethic and technical expertise make him our go-to developer for complex projects.",
     Title: "Nusrat Jahan",
-    Sub: "Operations Manager",
+    Sub: "Operations Manager, NextGen Solutions",
   },
 ];
+
 
 const Testimonial = () => {
   const [nav1, setNav1] = useState();

@@ -31,7 +31,7 @@ export default function Home() {
                 <Exprience2/>
                 <ProjectSection/>
                 <Testimonial/>
-                <Pricing/>
+                {/* <Pricing/> */}
                 <ContactArea/>
                 <BlogSection/>
                 <Footer/>

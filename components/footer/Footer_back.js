@@ -1,25 +1,23 @@
-import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+import { Link } from "react-scroll";
 import CtaSection from "../ctaSection/ctaSection";
 
-export default function Footer() {
+const SubmitHandler = (e) => {
+  e.preventDefault();
+};
+
+const Footer = (props) => {
   return (
     <footer className="wpo-site-footer">
       <CtaSection />
       <div className="upper-footer">
         <div className="container">
           <div className="row">
-            {/* Logo and About */}
             <div className="col col-lg-4 col-md-6 col-12">
               <div className="widget about-widget">
                 <div className="logo widget-title">
-                  <Link className="site-logo" href="/">
-                    {/* <Image
-                      src="/images/logo.png"
-                      alt="Rehan Akram Logo"
-                      width={40}
-                      height={40}
-                    /> */}
+                  <Link className="site-logo" to="/">
+                    {/* <img src="images/logo.png" alt="" /> */}
                     Rehan Akram
                   </Link>
                 </div>
@@ -31,47 +29,45 @@ export default function Footer() {
                 <div className="social-icons">
                   <ul>
                     <li>
-                      <Link
+                      <a
                         href="https://facebook.com/"
                         target="_blank"
                         aria-label="Facebook"
                       >
                         <i className="ti-facebook"></i>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
+                      <a
                         href="https://twitter.com/"
                         target="_blank"
                         aria-label="Twitter"
                       >
                         <i className="ti-twitter-alt"></i>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
+                      <a
                         href="https://linkedin.com/in/"
                         target="_blank"
                         aria-label="LinkedIn"
                       >
                         <i className="ti-linkedin"></i>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
+                      <a
                         href="https://github.com/"
                         target="_blank"
                         aria-label="GitHub"
                       >
                         <i className="ti-github"></i>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-
-            {/* Navigation */}
             <div className="col col-lg-2 col-md-6 col-12">
               <div className="widget link-widget">
                 <div className="widget-title">
@@ -79,66 +75,82 @@ export default function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <Link href="#about">About Me</Link>
+                    <Link to="about" spy={true} smooth={true} duration={500}>
+                      About us
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#contact">Contact</Link>
+                    <Link to="contact" spy={true} smooth={true} duration={500}>
+                      Contact us
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#portfolio">Projects</Link>
+                    <Link
+                      to="portfolio"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                    >
+                      Projects
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#blog">Blog</Link>
+                    <Link to="blog" spy={true} smooth={true} duration={500}>
+                      Recent Post
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
-
-            {/* Services */}
             <div className="col col-lg-3 col-md-6 col-12">
               <div className="widget link-widget service-link-widget">
                 <div className="widget-title">
-                  <h3>Services</h3>
+                  <h3>All Services</h3>
                 </div>
                 <ul>
                   <li>
-                    <Link href="#service">Laravel Web Development</Link>
+                    <Link to="service" spy={true} smooth={true} duration={500}>
+                      Web Design
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#service">ASP.NET Core Development</Link>
+                    <Link to="service" spy={true} smooth={true} duration={500}>
+                      Web Development
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#service">ReactJS Frontend Development</Link>
+                    <Link to="service" spy={true} smooth={true} duration={500}>
+                      Brand Identity
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#service">API Integration & Security</Link>
+                    <Link to="service" spy={true} smooth={true} duration={500}>
+                      Digital Marketing
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
-
-            {/* Newsletter */}
             <div className="col col-lg-3 col-md-6 col-12">
               <div className="widget newsletter-widget">
                 <div className="widget-title">
                   <h3>Newsletter</h3>
                 </div>
                 <p>
-                  Stay updated with the latest in Laravel, ASP.NET, and ReactJS.
+                  Must explain to you how all this mistaken idea pleasure born
+                  and give you a complete account.
                 </p>
-                <form action="/api/subscribe" method="POST">
+                <form onSubmit={SubmitHandler}>
                   <div className="input-1">
                     <input
                       type="email"
                       className="form-control"
-                      name="email"
                       placeholder="Email Address *"
-                      aria-label="Email Address"
                       required
                     />
                   </div>
                   <div className="submit clearfix">
-                    <button type="submit" aria-label="Subscribe">
+                    <button type="submit">
                       <i className="ti-email"></i>
                     </button>
                   </div>
@@ -147,17 +159,16 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Decorative Shape */}
         <div className="shadow-shape">
-          <svg
-            width="1319"
-            height="1567"
-            viewBox="0 0 1319 1567"
-            fill="none"
-          >
+          <svg width="1319" height="1567" viewBox="0 0 1319 1567" fill="none">
             <g filter="url(#filter0_f_39_3833)">
-              <circle cx="803" cy="803" r="303" fill="#59C378" fillOpacity="0.5" />
+              <circle
+                cx="803"
+                cy="803"
+                r="303"
+                fill="#59C378"
+                fillOpacity="0.5"
+              />
             </g>
             <defs>
               <filter
@@ -185,18 +196,19 @@ export default function Footer() {
           </svg>
         </div>
       </div>
-
-      {/* Lower Footer */}
       <div className="lower-footer">
         <div className="container">
           <div className="row">
             <div className="separator"></div>
             <p className="copyright">
-              &copy; {new Date().getFullYear()} Rehan Akram. All Rights Reserved.
+              &copy; {new Date().getFullYear()} Rehan Akram. All Rights
+              Reserved.
             </p>
           </div>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

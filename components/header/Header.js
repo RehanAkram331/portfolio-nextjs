@@ -5,7 +5,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 
 const Header = (props) => {
   const ClickHandler = () => {
-    window.scrollTo(10, 0);
+    // window.scrollTo(10, 0);
   };
 
   return (
@@ -117,17 +117,17 @@ const Header = (props) => {
                 <div className="header-right">
                   <div className="header-btn">
                     <a
-                      onClick={ClickHandler}
+                      // onClick={ClickHandler}
                       className="theme-btn"
-                      download="CV Of Rehan"
+                      // download="CV Of Rehan"
                       href="CVOfRehan.pdf"
                       title="CVOfRehan"
                     >
-                      <img
+                      {/* <img
                         className="hide-img"
                         alt="CVOfRehan"
                         src="CVOfRehan.pdf"
-                      />
+                      /> */}
                       Resume
                     </a>
                   </div>

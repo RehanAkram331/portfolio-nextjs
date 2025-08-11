@@ -1,29 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo1 from '../../images/work/1.png'
-import logo2 from '../../images/work/2.png'
-import logo3 from '../../images/work/3.png'
-import logo4 from '../../images/work/4.png'
 import SectionTitle from '../SectionTitle/SectionTitle'
 
 const Expriences = [
     {
         date: '2015 - 2016',
-        logo: logo1,
+        logo: "/images/work/1.png",
         position: 'Junior Visual Designer',
         companyName: 'Trapeza Group, USA.',
         workFrom: '',
     },
     {
         date: '2017 - 2018',
-        logo: logo2,
+        logo: "/images/work/2.png",
         position: 'UI/UX Designer',
         companyName: 'Gallerie Ontario, Canada',
         workFrom: '(Remote)',
     },
     {
         date: '2019 - 2020',
-        logo: logo3,
+        logo: "/images/work/3.png",
         position: 'Seinor UI/UX Desinger',
         companyName: 'Morson Hybrid, Canada',
         workFrom: '',
@@ -46,7 +42,7 @@ const Exprience2 = (props) => {
                                         <li className="logo"><img src={exprience.logo} alt="" /></li>
                                         <li className="date">{exprience.date}</li>
                                         <li className="position">{exprience.position} <span>{exprience.companyName} <span>{exprience.workFrom}</span></span></li>
-                                        <li className="link"><Link href="/">Go to website</Link></li>
+                                        {/* <li className="link"><Link href="/">Go to website</Link></li> */}
                                     </ul>
                                 </div>
                             </div>

@@ -1,45 +1,96 @@
-
-
-
 const Projects = [
-    {
-       Id:'1',
-       pImg:'images/project/img-1.jpg',
-       ps1img:'images/project-single/img-1.jpg',
-       psub1img1:'images/project-single/p1.jpg',
-       psub1img2:'images/project-single/p2.jpg',
-       title:'Arkio - Architecture & Interior WordPress Theme',  
-       subTitle:'Architecture / Business',   
-    },
-    {
-       Id:'2',
-       pImg:'images/project/img-2.jpg',
-       ps1img:'images/project-single/img-2.jpg',
-       psub1img1:'images/project-single/p1.jpg',
-       psub1img2:'images/project-single/p2.jpg',
-       title:'Follio - Multipurpose Portfolio HTML5 Template', 
-       subTitle:'Web Design',    
-    },
-    {
-      Id:'3',
-      pImg:'images/project/img-3.jpg',
-      ps1img:'images/project-single/img-3.jpg',
-      psub1img1:'images/project-single/p1.jpg',
-      psub1img2:'images/project-single/p2.jpg',
-      title:'Elito - Creative Portfolio React Template',  
-      subTitle:'Website / Creative',   
-   },
-   {
-      Id:'4',
-      pImg:'images/project/img-2.jpg',
-      ps1img:'images/project-single/img-2.jpg',
-      psub1img1:'images/project-single/p1.jpg',
-      psub1img2:'images/project-single/p2.jpg',
-      title:'Follio - Multipurpose Portfolio HTML5 Template', 
-      subTitle:'Web Design',    
-   },
-   
-    
-]
+  {
+    Id: "1",
+    pImg: "images/project/accounting-inventory-thumb.jpg",
+    ps1img: "images/project-single/accounting-inventory-main.jpg",
+    psub1img1: "images/project-single/accounting-inventory-page1.jpg",
+    psub1img2: "images/project-single/accounting-inventory-page2.jpg",
+    title: " ERP-(Accounting, Inventory & POS)",
+    subTitle: "Laravel / jQuery / MySql / ERP / Accounting / Stock Control / Inventory / POS",
+    slug: "erp-accounting-inventory-pos-laravel",
+  },
+  {
+    Id: "2",
+    pImg: "images/project/evat-thumb.jpg",
+    ps1img: "images/project-single/evat-main.jpg",
+    psub1img1: "images/project-single/evat-page1.jpg",
+    psub1img2: "images/project-single/evat-page2.jpg",
+    title: "EVAT Application – NBR Approved",
+    subTitle: "ASP.NET Core / jQuery / SqlServer /  VAT Management",
+    slug: "evat-application-aspnet",
+  },
+  {
+    Id: "3",
+    pImg: "images/project/hrms-thumb.jpg",
+    ps1img: "images/project-single/hrms-main.jpg",
+    psub1img1: "images/project-single/hrms-page1.jpg",
+    psub1img2: "images/project-single/hrms-page2.jpg",
+    title: "HR Management System",
+    subTitle: "Laravel / HR & Payroll",
+    slug: "hrms-laravel",
+  },
+  {
+    Id: "4",
+    pImg: "images/project/co-walk-pos-thumb.jpg",
+    ps1img: "images/project-single/co-walk-pos-main.jpg",
+    psub1img1: "images/project-single/co-walk-pos-page1.jpg",
+    psub1img2: "images/project-single/co-walk-pos-page2.jpg",
+    title: "Co-Walk – POS & Inventory Management System",
+    subTitle: "ASP.NET Core / POS / Inventory",
+    slug: "co-walk-pos-aspnet",
+  },
+
+  {
+    Id: "5",
+    pImg: "images/project/warranty-system-thumb.jpg",
+    ps1img: "images/project-single/warranty-system-main.jpg",
+    psub1img1: "images/project-single/warranty-system-page1.jpg",
+    psub1img2: "images/project-single/warranty-system-page2.jpg",
+    title: "Warranty Management System",
+    subTitle: "ASP.NET Core / Warranty Tracking",
+    slug: "warranty-management-aspnet",
+  },
+
+  //   {
+  //     Id: "7",
+  //     pImg: "images/project/portfolio-react-thumb.jpg",
+  //     ps1img: "images/project-single/portfolio-react-main.jpg",
+  //     psub1img1: "images/project-single/portfolio-react-page1.jpg",
+  //     psub1img2: "images/project-single/portfolio-react-page2.jpg",
+  //     title: "Personal Portfolio – React & Next.js",
+  //     subTitle: "ReactJS / Next.js / Portfolio",
+  //     slug: "portfolio-react-nextjs",
+  //   },
+  //   {
+  //     Id: "8",
+  //     pImg: "images/project/qrcode-generator-thumb.jpg",
+  //     ps1img: "images/project-single/qrcode-generator-main.jpg",
+  //     psub1img1: "images/project-single/qrcode-generator-page1.jpg",
+  //     psub1img2: "images/project-single/qrcode-generator-page2.jpg",
+  //     title: "QR Code Generator Web App",
+  //     subTitle: "Laravel / QR Code",
+  //     slug: "qr-code-generator-laravel",
+  //   },
+  //   {
+  //     Id: "9",
+  //     pImg: "images/project/todo-spa-thumb.jpg",
+  //     ps1img: "images/project-single/todo-spa-main.jpg",
+  //     psub1img1: "images/project-single/todo-spa-page1.jpg",
+  //     psub1img2: "images/project-single/todo-spa-page2.jpg",
+  //     title: "SPA To-Do Application",
+  //     subTitle: "ReactJS / Laravel API",
+  //     slug: "todo-spa-react-laravel",
+  //   },
+  // {
+  //    Id: '1',
+  //    pImg: 'images/project/healthcalcpro-thumb.jpg',
+  //    ps1img: 'images/project-single/healthcalcpro-main.jpg',
+  //    psub1img1: 'images/project-single/healthcalcpro-page1.jpg',
+  //    psub1img2: 'images/project-single/healthcalcpro-page2.jpg',
+  //    title: 'HealthCalcPro – Laravel Health & Fitness Calculator',
+  //    subTitle: 'Laravel / Health App',
+  //    slug: 'healthcalcpro-laravel'
+  // },
+];
 
 export default Projects;

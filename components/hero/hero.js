@@ -67,15 +67,7 @@ const Hero = () => {
               <ReactSvg />
             </div>
             <div className="project floating-item">
-              <div className="icon">
-                <i className="fi flaticon-verified"></i>
-              </div>
-              <div className="p-text">
-                <h3>
-                  <span data-count="1500">1500</span>+
-                </h3>
-                <p>Complete Project</p>
-              </div>
+              <img src="images/icon/sql.png" width="100%" height="100%" alt="" />
             </div>
           </div>
         </div>

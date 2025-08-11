@@ -73,7 +73,11 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <i className={`fi ${service.icon}`}></i>
+                        <img
+                          src={`/images/icon/${service?.icon}`}
+                          alt={service.sTitle}
+                        />
+                        {/* <i className={`fi ${service.icon}`}></i> */}
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>
@@ -94,7 +98,11 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <i className={`fi ${service.icon}`}></i>
+                        <img
+                          src={`/images/icon/${service?.icon}`}
+                          alt={service.sTitle}
+                        />
+                        {/* <i className={`fi ${service.icon}`}></i> */}
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>
@@ -115,7 +123,11 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <i className={`fi ${service.icon}`}></i>
+                        <img
+                          src={`/images/icon/${service?.icon}`}
+                          alt={service.sTitle}
+                        />
+                        {/* <i className={`fi ${service.icon}`}></i> */}
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>

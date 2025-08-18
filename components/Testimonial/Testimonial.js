@@ -58,7 +58,7 @@ const Testimonial = () => {
   const [nav2, setNav2] = useState();
 
   return (
-    <section className="wpo-testimonial-section section-padding">
+    <section className="wpo-testimonial-section section-padding" id="testimonial">
       <div className="container">
         <div className="wpo-testimonial-wrap">
           <div className="row align-items-center">

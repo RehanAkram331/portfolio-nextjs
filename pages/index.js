@@ -6,19 +6,25 @@ import ServiceSection from "../components/ServiceSection/ServiceSection";
 import ExprienceSec from "../components/Exprience/Exprience";
 import Exprience2 from "../components/Exprience2/Exprience2";
 import ProjectSection from "../components/ProjectSection/ProjectSection";
-import Testimonial from "../components/Testimonial/Testimonial";
+// import Testimonial from "../components/Testimonial/Testimonial";
 import ContactArea from "../components/ContactArea";
 import BlogSection from "../components/BlogSection/BlogSection";
 import Footer from "../components/footer/Footer";
+import Scrollbar from "../components/scrollbar/scrollbar";
 import dynamic from "next/dynamic";
-// import Navbar from '../components/Navbar/Navbar';
-// import Scrollbar from '../components/scrollbar/scrollbar';
+import Header from "../components/header/Header";
+// import Pricing from "../components/Pricing/Pricing";
 const Navbar = dynamic(() => import("../components/Navbar/Navbar"), {
   ssr: false,
+  loading: () => (
+    <div className="fixed-navbar">
+      <Header />
+    </div>
+  ),
 });
-const Scrollbar = dynamic(() => import("../components/scrollbar/scrollbar"), {
-  ssr: false,
-});
+// const Scrollbar = dynamic(() => import("../components/scrollbar/scrollbar"), {
+//   ssr: false,
+// });
 
 export default function Home() {
   return (
@@ -30,13 +36,13 @@ export default function Home() {
           <Hero />
           <About />
           <ServiceSection />
-          <ExprienceSec />
+          {/* <ExprienceSec /> */}
           <Exprience2 />
           <ProjectSection />
-          <Testimonial />
+          {/* <Testimonial /> */}
           {/* <Pricing/> */}
           <ContactArea />
-           <BlogSection />
+          {/* <BlogSection /> */}
           <Footer />
           <Scrollbar />
         </div>

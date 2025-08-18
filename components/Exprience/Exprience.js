@@ -35,7 +35,7 @@ const Expriences = [
 
 const ExprienceSec = (props) => {
   return (
-    <div className="wpo-work-area section-padding">
+    <div className="wpo-work-area section-padding" id="experienceList">
       <div className="container">
         <SectionTitle
           Title={"My Work Experience"}

@@ -5,7 +5,7 @@ import CtaSection from "../ctaSection/ctaSection";
 export default function Footer() {
   return (
     <footer className="wpo-site-footer">
-      <CtaSection />
+      {/* <CtaSection /> */}
       <div className="upper-footer">
         <div className="container">
           <div className="row">

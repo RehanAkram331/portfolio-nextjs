@@ -52,16 +52,6 @@ const Projects = [
     slug: "warranty-management-aspnet",
   },
   {
-    Id: "6",
-    pImg: "images/project/warranty-system-thumb.jpg",
-    ps1img: "images/project-single/warranty-system-main.jpg",
-    psub1img1: "images/project-single/warranty-system-page1.jpg",
-    psub1img2: "images/project-single/warranty-system-page2.jpg",
-    title: "Whatsapp Clone",
-    subTitle: "VueJS / penia / Whatsapp Clone",
-    slug: "warranty-management-aspnet",
-  },
-  {
     Id: "10",
     pImg: "images/project/whatsapp-clone-thumb.jpg",
     ps1img: "images/project-single/whatsapp-clone-main.jpg",

@@ -33,6 +33,9 @@ const ServiceSection = (props) => {
     >
       <div className="container">
         <SectionTitle Title={"Popular Services"} />
+        {/* <i className={`fi ${service.icon}`}></i> */}
+        {/* <i className={`fi ${service.icon}`}></i> */}
+        {/* <i className={`fi ${service.icon}`}></i> */}
         <div className="wpo-service-wrap">
           <Nav tabs>
             <NavItem>
@@ -66,6 +69,7 @@ const ServiceSection = (props) => {
               </NavLink>
             </NavItem>
           </Nav>
+          
           <TabContent activeTab={activeTab}>
             <TabPane tabId="1">
               <div className="row align-items-center">
@@ -77,7 +81,7 @@ const ServiceSection = (props) => {
                           src={`/images/icon/${service?.icon}`}
                           alt={service.sTitle}
                         />
-                        {/* <i className={`fi ${service.icon}`}></i> */}
+                        
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>
@@ -102,7 +106,7 @@ const ServiceSection = (props) => {
                           src={`/images/icon/${service?.icon}`}
                           alt={service.sTitle}
                         />
-                        {/* <i className={`fi ${service.icon}`}></i> */}
+                        
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>
@@ -127,7 +131,7 @@ const ServiceSection = (props) => {
                           src={`/images/icon/${service?.icon}`}
                           alt={service.sTitle}
                         />
-                        {/* <i className={`fi ${service.icon}`}></i> */}
+                        
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>

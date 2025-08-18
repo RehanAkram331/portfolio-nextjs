@@ -38,7 +38,7 @@ const Header = (props) => {
                     <i className="ti-close"></i>
                   </button>
                   <ul className="nav navbar-nav mb-2 mb-lg-0">
-                    <li className="menu-item-has-children">
+                    {/* <li className="menu-item-has-children">
                       <a href="/">Home</a>
                       <ul className="sub-menu">
                         <li>
@@ -53,6 +53,17 @@ const Header = (props) => {
                           <NavLink href="/home3">Home Style 3</NavLink>
                         </li>
                       </ul>
+                    </li> */}
+                    <li>
+                      <Link
+                        activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                      >
+                        Home
+                      </Link>
                     </li>
                     <li>
                       <Link
@@ -79,6 +90,17 @@ const Header = (props) => {
                     <li>
                       <Link
                         activeClass="active"
+                        to="experienceCard"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                      >
+                        Experience
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        activeClass="active"
                         to="portfolio"
                         spy={true}
                         smooth={true}
@@ -88,6 +110,18 @@ const Header = (props) => {
                         Portfolio
                       </Link>
                     </li>
+                    {/* <li>
+                      <Link
+                        activeClass="active"
+                        to="testimonial"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        onClick={ClickHandler}
+                      >
+                        Testimonial
+                      </Link>
+                    </li> */}
                     <li>
                       <Link
                         activeClass="active"

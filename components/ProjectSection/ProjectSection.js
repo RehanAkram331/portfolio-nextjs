@@ -14,7 +14,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   rows: 2,
-//   vertical: true,
+  //  vertical: true,
   // verticalSwiping: true,
   // swipeToSlide: true,
   responsive: [

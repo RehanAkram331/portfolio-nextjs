@@ -7,7 +7,7 @@ const ContactForm = () => {
     const [forms, setForms] = useState({
         name: '',
         email: '',
-        subject: '',
+        subject: 'Web Development',
         phone: '',
         message: ''
     });
@@ -30,7 +30,7 @@ const ContactForm = () => {
             setForms({
                 name: '',
                 email: '',
-                subject: '',
+                subject: 'Web Development',
                 phone: '',
                 message: ''
             })
@@ -78,7 +78,7 @@ const ContactForm = () => {
                         {validator.message('phone', forms.phone, 'required|phone')}
                     </div>
                 </div>
-                <div className="col col-lg-12 col-12">
+                {/* <div className="col col-lg-12 col-12">
                     <div className="form-field">
                         <select
                             onBlur={(e) => changeHandler(e)}
@@ -93,7 +93,7 @@ const ContactForm = () => {
                         </select>
                         {validator.message('subject', forms.subject, 'required')}
                     </div>
-                </div>
+                </div> */}
                 <div className="col col-lg-12 col-12">
                     <textarea
                         onBlur={(e) => changeHandler(e)}

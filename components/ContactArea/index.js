@@ -54,7 +54,7 @@ const ContactArea = (props) => {
                           <i className="fi flaticon-phone-call"></i>
                         </div>
                         <div className="info-text">
-                          <span>Phone & Watsapp</span>
+                          <span>Phone & Whatsapp</span>
                         </div>
                       </div>
                     </div>

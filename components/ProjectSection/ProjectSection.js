@@ -155,6 +155,9 @@ const ProjectSection = (props) => {
         pImg={state.ps1img}
         psub1img1={state.psub1img1}
         psub1img2={state.psub1img2}
+        // subTitle={state.subTitle}
+        // slug={state.slug}
+        description={state?.description}
       />
     </div>
   );

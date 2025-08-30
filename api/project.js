@@ -9,6 +9,8 @@ const Projects = [
     subTitle:
       "Laravel / jQuery / MySql / ERP / Accounting / Stock Control / Inventory / POS",
     slug: "erp-accounting-inventory-pos-laravel",
+    description:
+      "A complete ERP solution that includes accounting, inventory, and POS features. Built with Laravel and MySQL, it helps businesses manage stock, financial transactions, and sales in one system.",
   },
   {
     Id: "2",
@@ -19,6 +21,8 @@ const Projects = [
     title: "EVAT Application – NBR Approved",
     subTitle: "ASP.NET Core / jQuery / SqlServer /  VAT Management",
     slug: "evat-application-aspnet",
+    description:
+      "An NBR-approved VAT management system developed with ASP.NET Core. It streamlines VAT calculation, compliance reporting, and submission workflows for businesses.",
   },
   {
     Id: "3",
@@ -29,6 +33,8 @@ const Projects = [
     title: "HR Management System",
     subTitle: "Laravel / HR & Payroll",
     slug: "hrms-laravel",
+    description:
+      "A Human Resource Management System built with Laravel to handle employee records, payroll, attendance, and performance management.",
   },
   {
     Id: "4",

@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 const About = (props) => {
   return (
@@ -148,10 +148,10 @@ const About = (props) => {
         </svg>
       </div>
       <div className="line-shape-1">
-        <img src="images/about/shape1.png" alt="" />
+        <Image src="/images/about/shape1.png" fill alt="" />
       </div>
       <div className="line-shape-2">
-        <img src="images/about/shape2.png" alt="" />
+        <Image src="/images/about/shape2.png" fill alt="" />
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import Slider from "react-slick";
 
 const testimonial = [
   {
     id: "01",
-    tImg: "images/testimonial/img-1.jpg",
+    tImg: "/images/testimonial/img-1.jpg",
     tTitle: "Delivered a complete Laravel-based ERP system ahead of schedule.",
     Des: "Rehan transformed our outdated system into a modern, secure Laravel ERP platform. His attention to detail and ability to integrate inventory, accounting, and POS modules was outstanding. We’ve seen a huge boost in efficiency since launch.",
     Title: "Mahmud Hasan",
@@ -12,7 +13,7 @@ const testimonial = [
   },
   {
     id: "02",
-    tImg: "images/testimonial/img-2.jpg",
+    tImg: "/images/testimonial/img-2.jpg",
     tTitle: "Outstanding ASP.NET Core development for order management.",
     Des: "We hired Rehan to build a secure, high-performance order management system in ASP.NET Core. The result exceeded expectations — fast, reliable, and easy to maintain. His clean coding and database optimization really stood out.",
     Title: "Sarah Thompson",
@@ -20,7 +21,7 @@ const testimonial = [
   },
   {
     id: "03",
-    tImg: "images/testimonial/img-3.jpg",
+    tImg: "/images/testimonial/img-3.jpg",
     tTitle: "ReactJS frontend with seamless Laravel API integration.",
     Des: "Rehan built us a dynamic ReactJS dashboard connected to our Laravel backend APIs. The interface is smooth, responsive, and user-friendly. His ability to bridge backend and frontend made the project a success.",
     Title: "Imran Khan",
@@ -28,7 +29,7 @@ const testimonial = [
   },
   {
     id: "04",
-    tImg: "images/testimonial/img-4.jpg",
+    tImg: "/images/testimonial/img-4.jpg",
     tTitle: "Always delivers on time with production-ready code.",
     Des: "Rehan’s professionalism and problem-solving skills are unmatched. He communicates clearly, delivers on time, and ensures everything is tested and ready for production deployment.",
     Title: "Emily Watson",
@@ -36,7 +37,7 @@ const testimonial = [
   },
   {
     id: "05",
-    tImg: "images/testimonial/img-5.jpg",
+    tImg: "/images/testimonial/img-5.jpg",
     tTitle: "Security and performance optimization expert for e-commerce.",
     Des: "Rehan optimized our e-commerce platform’s database and implemented role-based access control. Our load time is faster, and our security is now top-notch.",
     Title: "Tanvir Ahmed",
@@ -44,7 +45,7 @@ const testimonial = [
   },
   {
     id: "06",
-    tImg: "images/testimonial/img-6.jpg",
+    tImg: "/images/testimonial/img-6.jpg",
     tTitle: "Full-stack Laravel, ASP.NET, and ReactJS developer you can trust.",
     Des: "From Laravel APIs to React frontends and ASP.NET integrations, Rehan can handle the full stack with ease. His work ethic and technical expertise make him our go-to developer for complex projects.",
     Title: "Nusrat Jahan",
@@ -52,13 +53,15 @@ const testimonial = [
   },
 ];
 
-
 const Testimonial = () => {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
   return (
-    <section className="wpo-testimonial-section section-padding" id="testimonial">
+    <section
+      className="wpo-testimonial-section section-padding"
+      id="testimonial"
+    >
       <div className="container">
         <div className="wpo-testimonial-wrap">
           <div className="row align-items-center">
@@ -75,25 +78,25 @@ const Testimonial = () => {
                     >
                       {testimonial.map((tesmnl, tsm) => (
                         <div className="testimonial-img" key={tsm}>
-                          <img src={tesmnl.tImg} alt="" />
+                          <Image src={tesmnl.tImg} alt="" />
                         </div>
                       ))}
                     </Slider>
                   </div>
                   <div className="side-img-1">
-                    <img src="images/testimonial/img-2.jpg" alt="" />
+                    <Image src="/images/testimonial/img-2.jpg" alt="" />
                   </div>
                   <div className="side-img-2">
-                    <img src="images/testimonial/img-3.jpg" alt="" />
+                    <Image src="/images/testimonial/img-3.jpg" alt="" />
                   </div>
                   <div className="side-img-3">
-                    <img src="images/testimonial/img-4.jpg" alt="" />
+                    <Image src="/images/testimonial/img-4.jpg" alt="" />
                   </div>
                   <div className="side-img-4">
-                    <img src="images/testimonial/img-5.jpg" alt="" />
+                    <Image src="/images/testimonial/img-5.jpg" alt="" />
                   </div>
                   <div className="side-img-5">
-                    <img src="images/testimonial/img-6.jpg" alt="" />
+                    <Image src="/images/testimonial/img-6.jpg" alt="" />
                   </div>
                   <div className="border-s1"></div>
                   <div className="border-s2"></div>
@@ -173,7 +176,7 @@ const Testimonial = () => {
       </div>
       <div className="left-shape"></div>
       <div className="right-shape">
-        <img src="images/testimonial/shape.png" alt="" />
+        <Image src="/images/testimonial/shape.png" alt="" />
       </div>
     </section>
   );

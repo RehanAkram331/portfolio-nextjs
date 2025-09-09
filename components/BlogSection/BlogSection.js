@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import blogs from '../../api/blogs'
 import BlogSingle from "../BlogSingle";
+import Image from 'next/image';
 
 const settings = {
     dots: false,
@@ -88,7 +89,7 @@ const BlogSection = () => {
                         {blogs.map((blog, bl) => (
                             <div className="wpo-blog-item" key={bl}>
                                 <div className="wpo-blog-img">
-                                    <img src={blog.screens} alt="" />
+                                    <Image src={blog.screens} alt="" />
                                 </div>
                                 <div className="wpo-blog-text">
                                     <ul>

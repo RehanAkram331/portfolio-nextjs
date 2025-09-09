@@ -1,11 +1,11 @@
-import React from "react";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import Image from "next/image";
 
 const Expriences = [
   {
     date: "Apr 2022 – Present",
-    logo: "images/work/hamko.png",
+    logo: "/images/work/hamko.png",
     position: "Programmer (Full-Stack Developer)",
     companyName: "Hamko Corporation Ltd, Dhaka",
     workFrom: "(On-site)",
@@ -52,7 +52,7 @@ const Exprience2 = (props) => {
                 <div className="wpo-work-item">
                   <ul>
                     <li className="logo">
-                      <img src={exprience.logo} alt="" />
+                      <Image src={exprience.logo} fill alt="" />
                     </li>
                     <li className="date">{exprience.date}</li>
                     <li className="position">

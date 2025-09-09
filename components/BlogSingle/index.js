@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 import Link from 'next/link'
 import { Dialog, Grid, } from '@mui/material'
+import Image from 'next/image';
 
 
 const submitHandler = (e) => {
@@ -30,7 +31,7 @@ const BlogSingle = ({ maxWidth, open, onClose, title, bImg, create_at, author, c
                                     <div className="wpo-blog-content">
                                         <div className="post format-standard-image">
                                             <div className="entry-media">
-                                                <img src={bImg} alt="" />
+                                                <Image src={bImg} fill alt="" />
                                             </div>
                                             <div className="entry-meta">
                                                 <ul>
@@ -48,10 +49,10 @@ const BlogSingle = ({ maxWidth, open, onClose, title, bImg, create_at, author, c
 
                                             <div className="gallery">
                                                 <div>
-                                                    <img src='images/blog/img-4.jpg' alt="" />
+                                                    <Image src='/images/blog/img-4.jpg' alt="" />
                                                 </div>
                                                 <div>
-                                                    <img src='images/blog/img-5.jpg' alt="" />
+                                                    <Image src='/images/blog/img-5.jpg' alt="" />
                                                 </div>
                                             </div>
                                         </div>

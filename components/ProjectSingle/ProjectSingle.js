@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Dialog, Grid } from "@mui/material";
 import Contact from "./contact";
 import RelatedProject from "./related";
+import Image from "next/image";
 
 const ProjectSingle = ({
   maxWidth,
@@ -44,7 +45,7 @@ const ProjectSingle = ({
                       </div>
                       <div className="wpo-project-single-main-img">
                         <div className="thumbnail">
-                          <img src={pImg} alt="" />
+                          <Image src={pImg} alt="" />
                         </div>
                       </div>
                     </div>
@@ -52,12 +53,12 @@ const ProjectSingle = ({
                       <div className="row mt-4">
                         <div className="col-md-6 col-sm-6 col-12">
                           <div className="wpo-p-details-img">
-                            <img src={psub1img1} alt="" />
+                            <Image src={psub1img1} alt="" />
                           </div>
                         </div>
                         <div className="col-md-6 col-sm-6 col-12">
                           <div className="wpo-p-details-img">
-                            <img src={psub1img2} alt="" />
+                            <Image src={psub1img2} alt="" />
                           </div>
                         </div>
                       </div>

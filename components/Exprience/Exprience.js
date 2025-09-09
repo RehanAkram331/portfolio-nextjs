@@ -1,6 +1,6 @@
-import React from "react";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import Image from "next/image";
 
 const Expriences = [
   {
@@ -37,16 +37,14 @@ const ExprienceSec = (props) => {
   return (
     <div className="wpo-work-area section-padding" id="experienceList">
       <div className="container">
-        <SectionTitle
-          Title={"My Work Experience"}
-        />
+        <SectionTitle Title={"My Work Experience"} />
         <div className="wpo-work-wrap">
           {Expriences.map((exprience, exp) => (
             <div className="wpo-work-item" key={exp}>
               <ul>
                 <li className="date">{exprience.date}</li>
                 <li className="logo">
-                  <img src={exprience.logo} alt="" />
+                  <Image src={exprience.logo} alt="" />
                 </li>
                 <li className="position">
                   {exprience.position}{" "}

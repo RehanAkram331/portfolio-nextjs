@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Dialog, Grid } from "@mui/material";
 import Contact from "./contact";
 import Services from "../../api/service";
+import Image from "next/image";
 
 const ServiceSingle = ({
   maxWidth,
@@ -33,7 +34,7 @@ const ServiceSingle = ({
                   <div className="wpo-service-single-wrap">
                     <div className="wpo-service-single-item">
                       <div className="wpo-service-single-main-img">
-                        <img src={dImg} alt="" />
+                        <Image src={dImg} alt="" />
                       </div>
                       <div className="wpo-service-single-title">
                         <h3>{title}</h3>
@@ -59,12 +60,12 @@ const ServiceSingle = ({
                       <div className="row mt-4">
                         <div className="col-md-6 col-sm-6 col-12">
                           <div className="wpo-p-details-img">
-                            <img src={sImg1} alt="" />
+                            <Image src={sImg1} alt="" />
                           </div>
                         </div>
                         <div className="col-md-6 col-sm-6 col-12">
                           <div className="wpo-p-details-img">
-                            <img src={sImg2} alt="" />
+                            <Image src={sImg2} alt="" />
                           </div>
                         </div>
                       </div>

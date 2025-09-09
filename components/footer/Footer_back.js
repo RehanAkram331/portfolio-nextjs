@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-scroll";
 import CtaSection from "../ctaSection/ctaSection";
 
@@ -17,7 +16,6 @@ const Footer = (props) => {
               <div className="widget about-widget">
                 <div className="logo widget-title">
                   <Link className="site-logo" to="/">
-                    {/* <img src="images/logo.png" alt="" /> */}
                     Rehan Akram
                   </Link>
                 </div>

@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-scroll";
 import Laravel from "../Icon/Laravel";
 import ReactSvg from "../Icon/ReactSvg";
+import Image from "next/image";
 const Hero = () => {
   return (
     <section className="static-hero" id="home">
@@ -51,12 +51,25 @@ const Hero = () => {
       <div className="static-hero-right">
         <div className="static-hero-img">
           <div className="static-hero-img-inner">
-            <img src="images/slider/10.png" alt="" />
+            <Image
+              src="/images/slider/10.png"
+              alt="slider image"
+              width={1000} // original width of your image
+              height={1000} // original height
+              className="img-fluid"
+              style={{ width: "100%", height: "auto" }}
+              placeholder="blur"
+              blurDataURL="/images/slider/10.png" // small blurred version
+              priority
+            />
             <div className="icon-1 floating-item">
-              <img
-                src="images/icon/asp.png"
-                width="100%"
-                height="100%"
+              <Image
+                src="/images/icon/asp.png"
+                // width="100%"
+                // height="100%"
+                // width={100}
+                // height={100}
+                fill
                 alt=""
               />
             </div>
@@ -67,7 +80,7 @@ const Hero = () => {
               <ReactSvg />
             </div>
             <div className="project floating-item">
-              <img src="images/icon/sql.png" width="100%" height="100%" alt="" />
+              <Image src="/images/icon/sql.png" fill alt="" />
             </div>
           </div>
         </div>
@@ -163,10 +176,20 @@ const Hero = () => {
         </svg>
       </div>
       <div className="line-shape-1">
-        <img src="images/slider/line-1.png" alt="" />
+        <Image
+          src="/images/slider/line-1.png"
+          width={500}
+          height={500}
+          alt=""
+        />
       </div>
       <div className="line-shape-2">
-        <img src="images/slider/line-2.png" alt="" />
+        <Image
+          src="/images/slider/line-2.png"
+          width={500}
+          height={500}
+          alt=""
+        />
       </div>
     </section>
   );

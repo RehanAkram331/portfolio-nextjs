@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "elito-next",
+  "name": "rehan-akram-portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

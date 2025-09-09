@@ -5,6 +5,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import Services from "../../api/service";
 import classnames from "classnames";
 import ServiceSingle from "../ServiceSingle";
+import Image from "next/image";
 
 const ServiceSection = (props) => {
   const [open, setOpen] = React.useState(false);
@@ -69,7 +70,7 @@ const ServiceSection = (props) => {
               </NavLink>
             </NavItem>
           </Nav>
-          
+
           <TabContent activeTab={activeTab}>
             <TabPane tabId="1">
               <div className="row align-items-center">
@@ -77,11 +78,11 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <img
+                        <Image
                           src={`/images/icon/${service?.icon}`}
+                          fill
                           alt={service.sTitle}
                         />
-                        
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>
@@ -102,11 +103,11 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <img
+                        <Image
                           src={`/images/icon/${service?.icon}`}
+                          fill
                           alt={service.sTitle}
                         />
-                        
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>
@@ -127,11 +128,11 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <img
+                        <Image
                           src={`/images/icon/${service?.icon}`}
+                          fill
                           alt={service.sTitle}
                         />
-                        
                       </div>
                       <h2>{service.sTitle}</h2>
                       <p>{service.description}</p>

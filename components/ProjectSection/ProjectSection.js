@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import Projects from "../../api/project";
 import ProjectSingle from "../ProjectSingle/ProjectSingle";
+import Image from "next/image";
 
 const settings = {
   dots: false,
@@ -89,7 +90,7 @@ const ProjectSection = (props) => {
               <span>{description}</span>
             </div>
             <div className="portfolio-img">
-              <img src={image} title="" alt="" />
+              <Image src={image} title="" alt="" />
               <div className="portfolio-icon">
                 <a
                   href={url}
@@ -133,7 +134,7 @@ const ProjectSection = (props) => {
               {Projects.map((project, pro) => (
                 <div className="wpo-project-item" key={pro}>
                   <div className="wpo-project-img">
-                    <img src={project?.pImg} alt="" />
+                    <Image src={project?.pImg} fill alt="" />
                   </div>
                   <div className="wpo-project-text">
                     <h2 onClick={() => handleClickOpen(project)}>
@@ -177,10 +178,10 @@ const ProjectSection = (props) => {
           </svg>
         </div>
         <div className="line-shape-1">
-          <img src="images/project/line-1.png" alt="" />
+          <Image src="/images/project/line-1.png" fill alt="" />
         </div>
         <div className="line-shape-2">
-          <img src="images/project/line-2.png" alt="" />
+          <Image src="/images/project/line-2.png" fill alt="" />
         </div>
         <ProjectSingle
           open={open}

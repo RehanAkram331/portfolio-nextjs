@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-scroll";
 import NavLink from "next/link";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import Image from "next/image";
 
 const Header = (props) => {
   const ClickHandler = () => {
@@ -24,7 +24,7 @@ const Header = (props) => {
                     className="navbar-brand site-logo"
                     href="/"
                   >
-                    <img src="images/logo.jpeg" alt="" width="50px" />
+                    <Image src="/images/logo.jpeg" alt="" width={50} height={50} />
                     Rehan
                   </Link>
                 </div>

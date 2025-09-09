@@ -9,6 +9,7 @@ const ProjectSingle = ({
   onClose,
   title,
   pImg,
+  ps1img,
   psub1img1,
   psub1img2,
   description = "",
@@ -34,38 +35,11 @@ const ProjectSingle = ({
                   <div className="wpo-project-single-wrap">
                     <div className="wpo-project-single-item">
                       <div className="row align-items-center mb-5">
-                        <div className="col-lg-7">
+                        <div className="col-lg-12">
                           <div className="wpo-project-single-title">
                             <h3>{title} Project</h3>
                           </div>
                           <p>{description}</p>
-                        </div>
-                        <div className="col-lg-5">
-                          <div className="wpo-project-single-content-des-right">
-                            <ul>
-                              <li>
-                                Location :<span>7 Lake Street,London</span>
-                              </li>
-                              <li>
-                                Client :<span>wpOceans</span>
-                              </li>
-                              <li>
-                                Consult :<span>Harry Johnson</span>
-                              </li>
-                              <li>
-                                Project Type :<span>Elito React</span>
-                              </li>
-                              <li>
-                                Duration :<span>6 Month</span>
-                              </li>
-                              <li>
-                                Completion :<span>15 Apr 2022</span>
-                              </li>
-                              <li>
-                                Share :<span>Creative, Portfolio</span>
-                              </li>
-                            </ul>
-                          </div>
                         </div>
                       </div>
                       <div className="wpo-project-single-main-img">
@@ -74,47 +48,16 @@ const ProjectSingle = ({
                         </div>
                       </div>
                     </div>
-                    <div className="wpo-project-single-item list-widget">
-                      <div className="row">
-                        <div className="col-lg-6">
-                          <div className="wpo-project-single-title">
-                            <h3>Our Strategies</h3>
+                    <div className="wpo-project-single-gallery">
+                      <div className="row mt-4">
+                        <div className="col-md-6 col-sm-6 col-12">
+                          <div className="wpo-p-details-img">
+                            <img src={psub1img1} alt="" />
                           </div>
-                          <p>
-                            Massa volutpat odio facilisis purus sit elementum.
-                            Non, sed velit dictum quam. Id risus pharetra est,
-                            at rhoncus, nec ullamcorper tincidunt. Id aliquet
-                            duis sollicitudin diam.
-                          </p>
-                          <ul>
-                            <li>
-                              Non saed velit dictum quam risus pharetra esta.
-                            </li>
-                            <li>
-                              Id risus pharetra est, at rhoncus, nec ullamcorper
-                              tincidunt.
-                            </li>
-                            <li>
-                              Hac nibh fermentum nisi, platea condimentum
-                              cursus.
-                            </li>
-                            <li>
-                              Massa volutpat odio facilisis purus sit elementum.
-                            </li>
-                            <li>Elit curabitur amet risus bibendum.</li>
-                          </ul>
                         </div>
-                        <div className="col-lg-6">
-                          <div className="wpo-project-single-item-quote">
-                            <p>
-                              "Amazing looking theme and instantly turns your
-                              application into a great looking one. Really shows
-                              that pro_ fessionals built this theme up. Very
-                              happy with the way the theme looks ."
-                            </p>
-                            <span>
-                              Robert - <span>Yellow Theme</span>
-                            </span>
+                        <div className="col-md-6 col-sm-6 col-12">
+                          <div className="wpo-p-details-img">
+                            <img src={psub1img2} alt="" />
                           </div>
                         </div>
                       </div>
@@ -136,21 +79,7 @@ const ProjectSingle = ({
                         interdum morbi ac a.
                       </p>
                     </div>
-                    <div className="wpo-project-single-gallery">
-                      <div className="row mt-4">
-                        <div className="col-md-6 col-sm-6 col-12">
-                          <div className="wpo-p-details-img">
-                            <img src={psub1img1} alt="" />
-                          </div>
-                        </div>
-                        <div className="col-md-6 col-sm-6 col-12">
-                          <div className="wpo-p-details-img">
-                            <img src={psub1img2} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="wpo-project-single-item list-widget">
+                    {/* <div className="wpo-project-single-item list-widget">
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="wpo-project-single-title">
@@ -193,7 +122,7 @@ const ProjectSingle = ({
                           </ul>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                     <RelatedProject />
                     <div className="wpo-project-single-item">
                       <div className="wpo-project-contact-area">

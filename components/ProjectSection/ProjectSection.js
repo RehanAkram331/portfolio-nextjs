@@ -7,13 +7,13 @@ const settings = {
   dots: false,
   arrows: true,
   speed: 1000,
-  autoplaySpeed: 2000,
+  // autoplaySpeed: 2000,
   pauseOnHover: true,
   centerMode: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
-  rows: 2,
+  autoplay: false,
+  // rows: 2,
   //  vertical: true,
   // verticalSwiping: true,
   // swipeToSlide: true,
@@ -73,93 +73,158 @@ const ProjectSection = (props) => {
     setOpen(true);
     setState(item);
   };
-  return (
-    <div className="wpo-project-area section-padding" id="portfolio">
-      <div className="container">
-        <div className="wpo-section-title-s2">
-          <div className="row align-items-center">
-            <div className="col-lg-4 col-12">
-              <div className="title">
-                <h2>Work.</h2>
-                <p>
-                  Must explain to you how all this mistaken idea pleasure born
-                  and give you a complete account.
-                </p>
-              </div>
+  let content = "";
+  if (Projects?.length > 0) {
+    content = Projects.map((portfolio) => {
+      let classes = "";
+      let title = portfolio.title;
+      let description = portfolio.description;
+      let image = portfolio.pImg;
+      let url = portfolio.url;
+      return (
+        <div className={`grid-item ${classes}`}>
+          <div className="portfolio-box-01">
+            <div className="portfolio-info">
+              <h5 className="white-color font-weight-bold">{title}</h5>
+              <span>{description}</span>
             </div>
-            <div className="col-lg-6 offset-lg-2">
-              <div className="sec-title-icon">
-                <i className="fi flaticon-self-growth"></i>
+            <div className="portfolio-img">
+              <img src={image} title="" alt="" />
+              <div className="portfolio-icon">
+                <a
+                  href={url}
+                  className="gallery-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="ti-plus" />
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="wpo-project-wrap wpo-project-slide">
-          <Slider {...settings}>
-            {Projects.map((project, pro) => (
-              <div className="wpo-project-item" key={pro}>
-                <div className="wpo-project-img">
-                  <img src={project?.pImg} alt="" />
-                </div>
-                <div className="wpo-project-text">
-                  <h2 onClick={() => handleClickOpen(project)}>
-                    {project?.title}
-                  </h2>
-                  <span>{project?.subTitle}</span>
+      );
+    });
+  }
+  return (
+    <>
+      <div className="wpo-project-area section-padding" id="portfolio">
+        <div className="container">
+          <div className="wpo-section-title-s2">
+            <div className="row align-items-center">
+              <div className="col-lg-4 col-12">
+                <div className="title">
+                  <h2>Work.</h2>
+                  <p>
+                    Must explain to you how all this mistaken idea pleasure born
+                    and give you a complete account.
+                  </p>
                 </div>
               </div>
-            ))}
-          </Slider>
+              <div className="col-lg-6 offset-lg-2">
+                <div className="sec-title-icon">
+                  <i className="fi flaticon-self-growth"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="wpo-project-wrap wpo-project-slide">
+            <Slider {...settings}>
+              {Projects.map((project, pro) => (
+                <div className="wpo-project-item" key={pro}>
+                  <div className="wpo-project-img">
+                    <img src={project?.pImg} alt="" />
+                  </div>
+                  <div className="wpo-project-text">
+                    <h2 onClick={() => handleClickOpen(project)}>
+                      {project?.title}
+                    </h2>
+                    <span>{project?.subTitle}</span>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
+        <div className="shape-p">
+          <svg width="1325" height="1687" viewBox="0 0 1325 1687" fill="none">
+            <g filter="url(#filter0_f_39_4166)">
+              <circle cx="481.5" cy="843.5" r="343.5" fillOpacity="0.27" />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_39_4166"
+                x="-362"
+                y="0"
+                width="1687"
+                height="1687"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="250"
+                  result="effect1_foregroundBlur_39_4166"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div className="line-shape-1">
+          <img src="images/project/line-1.png" alt="" />
+        </div>
+        <div className="line-shape-2">
+          <img src="images/project/line-2.png" alt="" />
+        </div>
+        <ProjectSingle
+          open={open}
+          onClose={handleClose}
+          title={state.title}
+          pImg={state.pImg}
+          ps1img={state.ps1img}
+          psub1img1={state.psub1img1}
+          psub1img2={state.psub1img2}
+          // subTitle={state.subTitle}
+          // slug={state.slug}
+          description={state?.description}
+        />
       </div>
-      <div className="shape-p">
-        <svg width="1325" height="1687" viewBox="0 0 1325 1687" fill="none">
-          <g filter="url(#filter0_f_39_4166)">
-            <circle cx="481.5" cy="843.5" r="343.5" fillOpacity="0.27" />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_39_4166"
-              x="-362"
-              y="0"
-              width="1687"
-              height="1687"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="250"
-                result="effect1_foregroundBlur_39_4166"
-              />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-      <div className="line-shape-1">
-        <img src="images/project/line-1.png" alt="" />
-      </div>
-      <div className="line-shape-2">
-        <img src="images/project/line-2.png" alt="" />
-      </div>
-      <ProjectSingle
-        open={open}
-        onClose={handleClose}
-        title={state.title}
-        pImg={state.ps1img}
-        psub1img1={state.psub1img1}
-        psub1img2={state.psub1img2}
-        // subTitle={state.subTitle}
-        // slug={state.slug}
-        description={state?.description}
-      />
-    </div>
+      {/* <section
+        id="work"
+        data-nav-tooltip="Work"
+        className="pp-section pp-scrollable section dark-bg wpo-project-area section-padding" 
+        // style={{ height: `${height}px` }}
+        // style={{ height: `${200}px` }}
+      // >
+      //   <div className="container">
+      //     <div className="title">
+      //       <h3>My Portfolio.</h3>
+      //     </div>
+      //     <div className="portfolio-filter-01">
+      //       <ul className="filter nav">
+      //         <li
+                // className={`c-pointer ${activeBtn("*")}`}
+                // onClick={handleFilterKeyChange("*")}
+              //   data-filter="*"
+              // >
+              //   All
+              // </li>
+              */}
+      {/* {tagContent} */}
+      {/* </ul>
+          </div>
+          <div className="portfolio-content grid-gutter-lg grid-col-3 lightbox-gallery">
+            {content}
+          </div>
+        </div>
+      </section> */}
+    </>
   );
 };
 

@@ -6,6 +6,7 @@ import Services from "../../api/service";
 import classnames from "classnames";
 import ServiceSingle from "../ServiceSingle";
 import Image from "next/image";
+import Img from "../img/img";
 
 const ServiceSection = (props) => {
   const [open, setOpen] = React.useState(false);
@@ -78,9 +79,12 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <Image
+                        <Img
                           src={`/images/icon/${service?.icon}`}
-                          fill
+                          width={80}
+                          height={80}
+                          style={{ maxWidth: "100%", maxHeight: "100%" }}
+                          className="img-fluid"
                           alt={service.sTitle}
                         />
                       </div>
@@ -103,9 +107,12 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <Image
+                        <Img
                           src={`/images/icon/${service?.icon}`}
-                          fill
+                          width={80}
+                          height={80}
+                          style={{ maxWidth: "100%", maxHeight: "100%" }}
+                          className="img-fluid"
                           alt={service.sTitle}
                         />
                       </div>
@@ -128,9 +135,12 @@ const ServiceSection = (props) => {
                   <div className="col-lg-4 col-md-6 col-12" key={srv}>
                     <div className="wpo-service-item">
                       <div className="icon">
-                        <Image
+                        <Img
                           src={`/images/icon/${service?.icon}`}
-                          fill
+                          width={80}
+                          height={80}
+                          style={{ maxWidth: "100%", maxHeight: "100%" }}
+                          className="img-fluid"
                           alt={service.sTitle}
                         />
                       </div>

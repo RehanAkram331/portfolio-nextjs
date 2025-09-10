@@ -3,6 +3,7 @@ import { Dialog, Grid } from "@mui/material";
 import Contact from "./contact";
 import RelatedProject from "./related";
 import Image from "next/image";
+import Img from "../img/img";
 
 const ProjectSingle = ({
   maxWidth,
@@ -45,7 +46,7 @@ const ProjectSingle = ({
                       </div>
                       <div className="wpo-project-single-main-img">
                         <div className="thumbnail">
-                          <Image src={pImg} alt="" />
+                          <Img src={pImg} alt={title} />
                         </div>
                       </div>
                     </div>
@@ -53,12 +54,12 @@ const ProjectSingle = ({
                       <div className="row mt-4">
                         <div className="col-md-6 col-sm-6 col-12">
                           <div className="wpo-p-details-img">
-                            <Image src={psub1img1} alt="" />
+                            <Img src={psub1img1} alt={title} />
                           </div>
                         </div>
                         <div className="col-md-6 col-sm-6 col-12">
                           <div className="wpo-p-details-img">
-                            <Image src={psub1img2} alt="" />
+                            <Img src={psub1img2} alt={title} />
                           </div>
                         </div>
                       </div>

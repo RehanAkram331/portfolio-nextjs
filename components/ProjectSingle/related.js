@@ -1,6 +1,5 @@
-import React from 'react';
 import Projects from '../../api/project'
-import Image from 'next/image';
+import Img from '../img/img';
 
 
 const RelatedProject = () => {
@@ -17,7 +16,7 @@ const RelatedProject = () => {
                             <div className="col col-lg-4 col-md-6 col-12" key={pot}>
                                 <div className="wpo-project-item">
                                     <div className="wpo-project-img">
-                                        <Image src={project.pImg} alt=""/>
+                                        <Img src={project.pImg} alt=""/>
                                     </div>
                                     <div className="wpo-project-text">
                                         <h2>{project.title}</h2>

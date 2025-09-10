@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Image from "next/image";
+import Img from "../img/img";
 
 const Expriences = [
   {
@@ -52,7 +53,7 @@ const Exprience2 = (props) => {
                 <div className="wpo-work-item">
                   <ul>
                     <li className="logo">
-                      <Image src={exprience.logo} fill alt="" />
+                      <Img src={exprience.logo} alt="" />
                     </li>
                     <li className="date">{exprience.date}</li>
                     <li className="position">
